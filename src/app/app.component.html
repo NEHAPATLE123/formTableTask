@@ -1,0 +1,36 @@
+
+<h1 class="mt-5">Form-Table using ngModel</h1>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <app-std-form (fromStd)="formDetail($event)"></app-std-form>
+    </div>
+    <div class="col-md-6">
+      <app-std-table [tableArray]="stdArray1"></app-std-table>
+    </div>
+  </div>
+</div>
+
+<h1 class="mt-5">Form-Table using elementReference</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-std-form11 (stdform11)="dolller($event)"></app-std-form11>
+    </div>
+    <div class="col-md-6">
+      <app-std-table11 [std12]="stdArray2"></app-std-table11>
+    </div>
+  </div>
+</div>
+
+<h1 class="mt-5">Form-Table using ViewChild(nativeElement)</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-std-form22 (customEve)="dollerEve($event)"></app-std-form22>
+    </div>
+    <div class="col-md-6">
+      <app-std-table22 [custom]="stdArray3"></app-std-table22>
+    </div>
+  </div>
+</div>

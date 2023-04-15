@@ -1,0 +1,29 @@
+
+<div class="form-group">
+    <label for="fname">First Name</label>
+    <input type="text" #fnameVal id="fname" class="form-control">
+</div>
+<div class="form-group">
+    <label for="lname" >Last Name</label>
+    <input type="text" #lnameVal id="lname" class="form-control">
+</div>
+<div class="form-group">
+    <label for="email">email</label>
+    <input type="text" #emailVal id="email" class="form-control">
+</div>
+<div class="form-group">
+    <label for="Contact">Contact</label>
+    <input type="text" #contactVal id="Contact" class="form-control">
+</div>
+
+<div class="text-right">
+    <button class="btn btn-primary" (click)="onAddStudent(fnameVal,lnameVal,emailVal,contactVal)">
+        Add student
+    </button>
+</div>
+
+
+
+
+
+
